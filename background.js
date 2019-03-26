@@ -223,7 +223,9 @@ function sendAjax(req, successFn, errorFn) {
 			req.data = JSON.stringify(req.data);
 		}
 	}else{
-    delete req.headers['Content-Type'];
+		if (!req.headers['Content-Type']) {
+			delete req.headers['Content-Type'];
+		}
   }
 	if (req.query && typeof req.query === 'object') {
 		var getUrl = formUrlencode(req.query);

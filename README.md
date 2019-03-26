@@ -1,3 +1,5 @@
+### YApi 跨域请求 - jackyr修改版：去除get请求对传入content-type的过滤
+
 ### A chrome extension that gives the html page cross-domain request capability.
 ### 一个赋予html页面跨域请求能力的chrome扩展
 
